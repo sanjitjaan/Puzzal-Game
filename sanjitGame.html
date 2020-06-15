@@ -1,0 +1,481 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="logStyle.css">
+<script type="text/javascript">
+	
+	function change1(){
+	var r=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	
+	if(r=='none'){
+	document.getElementById('btm2').style.backgroundImage=window.getComputedStyle(document.getElementById('btm1')).backgroundImage;
+	document.getElementById('btm1').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm5').style.backgroundImage=window.getComputedStyle(document.getElementById('btm1')).backgroundImage;
+	document.getElementById('btm1').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+		
+	function change2(){
+	var l=window.getComputedStyle(document.getElementById('btm1')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	
+	if(l=='none'){
+	document.getElementById('btm1').style.backgroundImage=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	document.getElementById('btm2').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm3').style.backgroundImage=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	document.getElementById('btm2').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm6').style.backgroundImage=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	document.getElementById('btm2').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change3(){
+	var l=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm4')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	
+	if(l=='none'){
+	document.getElementById('btm2').style.backgroundImage=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	document.getElementById('btm3').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm4').style.backgroundImage=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	document.getElementById('btm3').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm7').style.backgroundImage=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	document.getElementById('btm3').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change4(){
+	var l=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	
+	if(l=='none'){
+	document.getElementById('btm3').style.backgroundImage=window.getComputedStyle(document.getElementById('btm4')).backgroundImage;
+	document.getElementById('btm4').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm8').style.backgroundImage=window.getComputedStyle(document.getElementById('btm4')).backgroundImage;
+	document.getElementById('btm4').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+
+	function change5(){
+	var u=window.getComputedStyle(document.getElementById('btm1')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm1').style.backgroundImage=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	document.getElementById('btm5').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm6').style.backgroundImage=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	document.getElementById('btm5').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm9').style.backgroundImage=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	document.getElementById('btm5').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change6(){
+	var u=window.getComputedStyle(document.getElementById('btm2')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm2').style.backgroundImage=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	document.getElementById('btm6').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm5').style.backgroundImage=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	document.getElementById('btm6').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm7').style.backgroundImage=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	document.getElementById('btm6').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm10').style.backgroundImage=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	document.getElementById('btm6').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change7(){
+	var u=window.getComputedStyle(document.getElementById('btm3')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm3').style.backgroundImage=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	document.getElementById('btm7').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm6').style.backgroundImage=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	document.getElementById('btm7').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm8').style.backgroundImage=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	document.getElementById('btm7').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm11').style.backgroundImage=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	document.getElementById('btm7').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change8(){
+	var u=window.getComputedStyle(document.getElementById('btm4')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm4').style.backgroundImage=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	document.getElementById('btm8').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm7').style.backgroundImage=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	document.getElementById('btm8').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm12').style.backgroundImage=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	document.getElementById('btm8').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+
+	function change9(){
+	var u=window.getComputedStyle(document.getElementById('btm5')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm13')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm5').style.backgroundImage=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	document.getElementById('btm9').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm10').style.backgroundImage=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	document.getElementById('btm9').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm13').style.backgroundImage=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	document.getElementById('btm9').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change10(){
+	var u=window.getComputedStyle(document.getElementById('btm6')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm6').style.backgroundImage=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	document.getElementById('btm10').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm9').style.backgroundImage=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	document.getElementById('btm10').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm11').style.backgroundImage=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	document.getElementById('btm10').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm14').style.backgroundImage=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	document.getElementById('btm10').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+			
+	function change11(){
+	var u=window.getComputedStyle(document.getElementById('btm7')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm7').style.backgroundImage=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	document.getElementById('btm11').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm10').style.backgroundImage=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	document.getElementById('btm11').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm12').style.backgroundImage=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	document.getElementById('btm11').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm15').style.backgroundImage=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	document.getElementById('btm11').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change12(){
+	var u=window.getComputedStyle(document.getElementById('btm8')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	var d=window.getComputedStyle(document.getElementById('btm16')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm8').style.backgroundImage=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	document.getElementById('btm12').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm11').style.backgroundImage=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	document.getElementById('btm12').style.backgroundImage='none';
+	}
+	else if(d=='none'){
+	document.getElementById('btm16').style.backgroundImage=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	document.getElementById('btm12').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+		
+	function change13(){
+	var u=window.getComputedStyle(document.getElementById('btm9')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm9').style.backgroundImage=window.getComputedStyle(document.getElementById('btm13')).backgroundImage;
+	document.getElementById('btm13').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm14').style.backgroundImage=window.getComputedStyle(document.getElementById('btm13')).backgroundImage;
+	document.getElementById('btm13').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change14(){
+	var u=window.getComputedStyle(document.getElementById('btm10')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm13')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	
+	if(u=='none'){
+	document.getElementById('btm10').style.backgroundImage=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	document.getElementById('btm14').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm13').style.backgroundImage=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	document.getElementById('btm14').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm15').style.backgroundImage=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	document.getElementById('btm14').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change15(){
+	var u=window.getComputedStyle(document.getElementById('btm11')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm14')).backgroundImage;
+	var r=window.getComputedStyle(document.getElementById('btm16')).backgroundImage;	
+	if(u=='none'){
+	document.getElementById('btm11').style.backgroundImage=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	document.getElementById('btm15').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm14').style.backgroundImage=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	document.getElementById('btm15').style.backgroundImage='none';
+	}
+	else if(r=='none'){
+	document.getElementById('btm16').style.backgroundImage=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	document.getElementById('btm15').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function change16(){
+	var u=window.getComputedStyle(document.getElementById('btm12')).backgroundImage;
+	var l=window.getComputedStyle(document.getElementById('btm15')).backgroundImage;
+	if(u=='none'){
+	document.getElementById('btm12').style.backgroundImage=window.getComputedStyle(document.getElementById('btm16')).backgroundImage;
+	document.getElementById('btm16').style.backgroundImage='none';
+	}
+	else if(l=='none'){
+	document.getElementById('btm15').style.backgroundImage=window.getComputedStyle(document.getElementById('btm16')).backgroundImage;
+	document.getElementById('btm16').style.backgroundImage='none';
+	}
+	else {
+	alert("Wrong move");
+	}
+	check();
+	}
+	
+	function check(){
+	if(window.getComputedStyle(document.getElementById('btm1')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic1.png\")"
+	&& window.getComputedStyle(document.getElementById('btm2')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic2.png\")"
+	&& window.getComputedStyle(document.getElementById('btm3')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic3.png\")"
+	&& window.getComputedStyle(document.getElementById('btm4')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic4.png\")"
+	&& window.getComputedStyle(document.getElementById('btm5')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic5.png\")"
+	&& window.getComputedStyle(document.getElementById('btm6')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic6.png\")"
+	&& window.getComputedStyle(document.getElementById('btm7')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic7.png\")"
+	&& window.getComputedStyle(document.getElementById('btm8')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic8.png\")"
+	&& window.getComputedStyle(document.getElementById('btm9')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic9.png\")"
+	&& window.getComputedStyle(document.getElementById('btm10')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic10.png\")"
+	&& window.getComputedStyle(document.getElementById('btm11')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic11.png\")"
+	&& window.getComputedStyle(document.getElementById('btm12')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic12.png\")"
+	&& window.getComputedStyle(document.getElementById('btm13')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic13.png\")"
+	&& window.getComputedStyle(document.getElementById('btm14')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic14.png\")"
+	&& window.getComputedStyle(document.getElementById('btm15')).backgroundImage=="url(\"file:///D:/Software/my%20software/HTML/Game/img/pic15.png\")")
+	{
+	alert("Game Win");
+	}
+	var p=window.getComputedStyle(document.getElementById('form-wrap')).height;
+	//alert(parseInt(p,10));
+	if(parseInt(p,10)>500){
+	document.getElementById('mainPic').style.margin="6% 0% 0% 0%";
+	}
+	else{
+	document.getElementById('mainPic').style.margin="-43% 0% 0% 60%";
+	}
+	}
+</script>
+</head>
+<body>
+<h3>Puzzal Game by Sanjit Kumar</h3>
+<div class="form-wrapper" id="form-wrap">
+    <table>
+	<div class="button-panel">
+	<tr><td>
+		
+		<input type="submit" id="btm1" onclick="change1();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm2" onclick="change2();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm3" onclick="change3();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm4" onclick="change4();" class="button" value=" "></input>
+   
+	</td></tr><tr><td>
+   
+		<input type="submit" id="btm5" onclick="change5();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm6" onclick="change6();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm7" onclick="change7();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm8" onclick="change8();" class="button" value=" "></input>
+   
+	</td></tr><tr><td>
+   
+		<input type="submit" id="btm9" onclick="change9();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm10" onclick="change10();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm11" onclick="change11();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm12" onclick="change12();" class="button" value=" "></input>
+   
+	</td></tr><tr><td>
+   
+		<input type="submit" id="btm13" onclick="change13();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm14" onclick="change14();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm15" onclick="change15();" class="button" value=" "></input>
+   
+	</td><td>
+   
+		<input type="submit" id="btm16" onclick="change16();" class="button" value=" "></input>
+    
+	</td></tr>
+	</div>
+	<table>
+	<div class="mainPic" id="mainPic">
+	</div>
+  
+</div>
+
+</body>
+</html>
