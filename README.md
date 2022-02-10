@@ -1,28 +1,5 @@
 This puzzal game in HTML. We have match the image with given image by sliding image part
 
-<slide>
-  <hgroup>
-    <h1>Title</h1>
-  </hgroup>
-  <article class="none">
-    <p>Content</p>
-    <aside class="note">
-      Note
-    </aside>
-  </article>
-</slide>
-
-<slide>
-  <hgroup>
-    <p>Next content</p>
-  </hgroup>
-</slide>
-
-<slide>
-  <hgroup>
-    <h2>String of small content</h2>
-  </hgroup>
-  <article class="smaller">
-    <p>Content</p>
-  </article>
-</slide>
+<div style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+As you can see, once there's enough text in this box, the box will grow scroll bars... that's why we call it a scroll box! You could also place an image into the scroll box.
+</div>
